@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    color: black;
+}
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    left: 0;
+    top: 0;
+    height: 80px;
+    background: white;
+    z-index: 31;
+    padding: 0 40px;
+    box-shadow: 0 2px 4px rgba(7,9,13,.1);
+}
+
+.logo-holder {
+    float: left;
+    height: 30px;
+    position: relative;
+    margin: auto auto auto 0;
+}
+
+.scale-image {
+    scale: unset!important;
+    width: 150px!important;
+    height: auto!important;
+    -webkit-transform: translateY(-14px);
+    transform: translateY(-14px);
+}
+
+
+.sign-up-btn {
+    background-color: rgb(30, 30, 94);
+    color: white;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0 auto auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover{
+    background-color: rgb(169, 172, 211);
+}
+
+.scale-up {
+    scale: 1.4;
+    margin-left: 10px;
+}
+
+.web-header {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+/* .container{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+} */
+
+#backgroundimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-image: url("https://findmyhostel.in/static/media/cover-image-3.ea89e80e.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text1 {
+    color: rgb(35, 35, 121);
+    text-align: center;
+    font-size:40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.searchbar input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.searchbar select {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.searchbar .hostel{
+    margin-left: 30px;
+}
+
+.searchbar select option{
+color: grey;
+}
+
+.searchbar .text2 {
+    font-size: medium;
+    width: 20%;
+    padding: 20px;
+    border: none;
+    border-radius: 55px;
+    margin-left: 90px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.searchbar .text2 i{
+    margin-left: 14px;
+}
+
+
+
+@media (max-width:900px){
+
+    .searchbar input[type="text"] {
+        width: 400px;
+    }
+
+    .searchbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .searchbar select {
+       margin-top: 20px;
+        margin-left:0px;
+        width: 400px;
+    }
+
+    .searchbar .hostel{
+        margin-left: 0px;
+    }
+
+    .searchbar .text2 {
+       margin-top: 20px;
+        margin-left: 0px;
+        width: auto;
+    }    
+
+}
